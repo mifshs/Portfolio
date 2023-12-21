@@ -1,0 +1,1048 @@
+* {
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    border: 0
+}
+
+header, main, footer {
+    border: black solid 1px;
+}
+
+.headerMini {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    z-index:99999999;
+    top: 0;
+    display: flex;
+    transition: 0.2s ease;
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+}
+
+.verstka {
+    transform: translateX(0px);
+    transition: transform 5.5s ease;
+}
+
+.verstka.appear {
+    opacity: 1;
+    transform: translateX(70px);
+}
+
+.underverst {
+    transform: translateX(0px);
+    transition: transform 5.5s ease;
+}
+
+.underverst.appear {
+    opacity: 1;
+    transform: translateX(200px);
+}
+
+.gradient-button {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    position: absolute;
+    margin-left: 530px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 30px 20px;
+    font-size: 50%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #939292 0%, rgb(216, 112, 147) 51%, #fbbff9 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transform: translateX(40px);
+    transition: background-position 0.5s ease, transform 7.3s ease;
+}
+
+.gradient-button:hover {
+    background-position: right center;
+}
+
+.gradient-button.appear {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+main {
+    overflow-y: hidden;
+    padding-bottom: 100px;
+    width: 100%;
+    margin: 0 auto;
+    border: 0 ;
+    height: 3000px;
+    overflow-x: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: absolute;
+    height: 100px;
+    width: 99.9%;
+    color: palevioletred;
+    background-color: rgb(0,0,0);
+}
+
+body {
+    background-color: rgb(89, 89, 89);
+    color: rgb(241, 234, 236);
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main_img-float {
+    width: 550px;
+    padding-right: 40px;
+    float: left;
+}
+
+#panorama {
+    width: 100%;
+    height: 900px;
+    background: url(../img/laptop3.jpg) no-repeat center 50%;
+    background-size: cover;
+}
+
+.verstka {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    position: absolute;
+    margin-left:500px;
+    margin-top: 350px;
+    font-size: 280%;
+}
+
+.underverst {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    position: absolute;
+    margin-left:500px;
+    margin-top: 430px;
+    font-size: 200%;
+}
+
+.uv {
+    text-decoration: underline;
+}
+
+.hl-invisible {
+    visibility: hidden;
+}
+.text_color {
+    color: white;
+}
+
+#logo {
+    width: auto;
+    height: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+    font-size: 24px;
+    float: left;
+    margin-left: 45px;
+}
+
+#logo {
+    transform: translateY(0px);
+    transition: transform 0.2s ease;
+}
+
+#logo:hover {
+    transform: translateY(-3px);
+}
+
+.pink {
+    color: rgb(216, 112, 147);
+}
+
+h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h2, h1 {
+    text-transform: uppercase;
+    font: bold;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;  
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sansserif {
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+}
+
+.monospace {
+    font-family: Lucida, Courier, monospace;
+}
+
+.link {
+    position: relative;
+}
+
+.link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: palevioletred;
+}
+
+.link::after {
+    width: 0;
+    transition: 0.3s;
+}
+
+.link:hover:after {
+    width: 100%;
+}
+
+.link::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mainnav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#mainnav li {
+    padding-right: 80px;                   
+    display: inline;
+}
+
+#mainnav a {
+    text-decoration: none;
+    color: palevioletred;
+    padding-right: 25px;
+    position: relative;
+}
+
+#mainnav {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-left: 500px;
+    cursor: pointer;
+}
+
+.JS {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+    min-height: 430px;
+    max-height: 430px;
+    min-width: 281px;
+    max-width: 281px;
+}
+
+.JS:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+.JS img {
+    display: block;
+    margin: 0 -15px 15px;
+    width: 300px;
+    height: 316px;
+}
+
+.React {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    min-height: 430px;
+    max-height: 430px;
+    min-width: 281px;
+    max-width: 281px;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.React:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.React img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.HTML {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    min-height: 430px;
+    max-height: 430px;
+    min-width: 281px;
+    max-width: 281px;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 25px 20px 20px 20px;
+}
+
+.HTML:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.HTML img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.CSS {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    min-height: 430px;
+    max-height: 430px;
+    min-width: 281px;
+    max-width: 281px;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.CSS:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.CSS img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.element {
+    min-height: 430px;
+    max-height: 430px;
+    min-width: 411px;
+    max-width: 411px;
+    padding-right: 0px;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: opacity 1.5s ease, transform 5.5s ease;
+}
+  
+.element.appear {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+#hov1 {
+    transition: transform 0.5s ease, opacity 1.7s ease;
+}
+
+#hov1:hover {
+    transform: scale(1.1);
+}
+
+#hov2 {
+    transition: transform 0.5s ease, opacity 1.7s ease;
+}
+
+#hov2:hover {
+    transform: scale(1.1);
+}
+
+#hov3 {
+    transition: transform 0.5s ease, opacity 1.7s ease;
+}
+
+#hov3:hover {
+    transform: scale(1.1);
+}
+
+#hov4 {
+    transition: transform 0.5s ease, opacity 1.7s ease;
+}
+
+#hov4:hover {
+    transform: scale(1.1);
+}
+
+.elements {
+    margin-left: 0px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.skillls {
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    height: 150px;
+}
+
+.skills {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3.9s ease, transform 3.1s ease;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-right: 30px;
+}
+
+.skills.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#skillsAndElements {
+    width: 2000px;
+    margin-top: 85px;
+    background-color: rgba(0, 0, 0);
+    background-size: cover;
+    height: 9.4%;
+    position: relative;
+}
+
+#skillsAndElements::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back {
+    background-color: black;
+    width: 1000px;
+}
+
+hr {
+    border: none; 
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 1px; 
+    margin-top: 100px;
+    transform: scale(2);
+}
+
+.r1 {
+    border: none; 
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 1px; 
+    margin-top: 00px;
+    transform: scale(2); 
+}
+
+.percents {
+    margin-top: 30px;
+    margin-left: 1100px;
+}
+
+.container {
+    display: flex;
+    width: 90%; 
+    background-color: #ddd; 
+}
+
+.sk {
+    text-align: right; 
+    padding-right: 20px; 
+    line-height: 40px; 
+    color: white; 
+}
+
+.sk.html {
+    transform: scaleX(0);
+    transition: transform 2s ease;
+    width: 90%; background-color: #f44336;
+}
+
+.sk.html.appear {
+    transform: scaleX(1);
+}
+
+.sk.html:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+.sk.css {
+    transform: scaleX(0);
+    transition: transform 2s ease;
+    width: 80%; background-color: #2196F3;
+}
+
+.sk.css.appear {
+    transform: scaleX(1);
+}
+
+.sk.css:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+.sk.js {
+    transform: scaleX(0);
+    transition: transform 2s ease;
+    width: 65%; background-color: #c6bf39;
+}
+
+.sk.js.appear {
+    transform: scaleX(1);
+}
+
+.sk.js:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+.sk.react {
+    transform: scaleX(0);
+    transition: transform 2s ease;
+    width: 60%; background-color: #244391;
+}
+
+.sk.react.appear {
+    transform: scaleX(1);
+} 
+
+.sk.react:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
+.description {
+    position: absolute;
+    width: 1000px;
+    margin: -10px 0px 0px 40px;
+    padding: 40px 10px 110px 10px;
+    background-color: rgb(167, 166, 166);
+    height: 270px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.txt {
+    text-shadow: rgb(0, 0, 0) 3px 1px 9px;
+    transform: translateX(-40px);
+    transition: transform 1.7s ease, text-shadow 1.7s ease;
+}
+
+.txt.appear {
+    transform: translateX(0px);
+}
+
+.txt:hover {
+    transition: transform 0.5s ease;
+    text-shadow: rgb(0, 0, 0) 3px 5px 12px;
+    transform: scale(1.05);
+}
+
+.pink1 {
+    color: rgb(216, 112, 147);
+    z-index:999;
+    position: absolute;
+    margin: 350px 0px 0px 100px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    transform: translateY(5px);
+}
+
+.pink1:hover {
+    transform: translateY(0px);
+    text-decoration: underline;
+}
+
+.percentsAndDescription {
+    background-color: black;
+    height: 400px;
+    padding: 10px;
+}
+
+.portfolio {
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    height: 150px;
+}
+
+.portfol {
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: translateX(35px);
+    transition: opacity 3.9s ease, transform 3.1s ease;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-right: 30px;
+}
+
+.portfol.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.job1 {
+    position: absolute;
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 20px 20px 20px;
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.job1:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.job1 img {
+    display: block;
+    margin: -15px -15px 15px;
+    width: 380px;
+    height: 406px;
+}
+
+.job2 {
+    position: absolute;
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 350px;
+    max-width: 350px;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.job2:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.job2 img {
+    display: block;
+    margin: -15px -15px 15px;
+    width: 380px;
+    height: 406px;
+}
+
+.job3 {
+    position: absolute;
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 350px;
+    max-width: 350px;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 25px 20px 20px 20px;
+}
+
+.job3:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.job3 img {
+    display: block;
+    margin: -15px -15px 15px;
+    width: 380px;
+    height: 406px;
+}
+
+.job4 {
+    position: absolute;
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 350px;
+    max-width: 350px;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.job4:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.job4 img {
+    display: block;
+    margin: -15px -15px 15px;
+    width: 380px;
+    height: 406px;
+}
+
+.job5 {
+    margin: 600px 0px 0px -500px;
+    position: absolute;
+    text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    min-height: 450px;
+    max-height: 450px;
+    min-width: 350px;
+    max-width: 350px;
+    background-color: rgb(167, 166, 166);
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.job5:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+.job5 img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.pElement {
+    margin-right: 50px;
+    min-height: 430px;
+    max-height: 430px;
+    min-width: 411px;
+    max-width: 411px;
+    padding-right: 0px;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: opacity 1.5s ease, transform 5.5s ease;
+}
+
+.pElement.appear {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+
+#pHov {
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 1.7s ease;
+}
+
+#pHov:hover {
+    transform: scale(1.1);
+}
+
+
+#pHov2 {
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 1.7s ease;
+}
+
+#pHov2:hover {
+    transform: scale(1.1);
+}
+
+
+#pHov3 {
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 1.7s ease;
+}
+
+#pHov3:hover {
+    transform: scale(1.1);
+}
+
+
+#pHov4 {
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 1.7s ease;
+}
+
+#pHov4:hover {
+    transform: scale(1.1);
+}
+
+
+.pElements {
+    margin-left: -30px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#pSkillsAndElements {
+    width: 2000px;
+    margin-top: 85px;
+    background-color: rgba(0, 0, 0);
+    background-size: cover;
+    height: 9.4%;
+    position: relative;
+}
+
+#pSkillsAndElements::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    background-size: cover;
+    z-index: -1;
+}
+
+.pBack {
+    background-color: black;
+    width: 2000px;
+    height: 450px;
+}
+
+#wrapper{
+	position: absolute;
+	width: 320px;
+	top: 60%;
+    margin: 2850px 0px 0px 765px;
+    opacity: 0;
+    transition: opacity 3.5s ease, transform 2.3s ease;
+    transform: translateY(20px);
+}
+
+#wrapper.appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.backWrapper {
+    overflow-x: hidden;
+    height: 400px;
+    width: 2000px;
+    background: url(../img/laptop2.jpg) no-repeat center 40%;
+}
+
+#signin {
+	height: 90px;
+	width: 300px;
+	border-radius: 8px;
+	position: absolute;
+}
+
+#signin::before {
+	display: block;
+	position: relative;
+	height: 2px;
+	background: rgb(52, 56, 61);
+	content: '';
+	top: 44px;
+	margin-left: 20px;
+	z-index: 1;
+}
+
+#signin input:first-of-type{
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+#signin input:last-of-type{
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+#signin textarea:first-of-type{
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+#signin textarea:last-of-type{
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+#signin  input[type="email"], #signin  input[type="text"], #signin button[type="submit"]{
+    background-color: rgb(167, 166, 166);
+	color: rgb(52, 56, 61);
+}
+
+#signin textarea{
+    position: absolute;
+    margin-top: 10px;
+    background-color: rgb(167, 166, 166);
+	color: rgb(52, 56, 61);
+}
+
+#signin  input[type="email"], #signin  input[type="text"] {
+    transition: box-shadow 0.3s ease;
+	position: relative;
+	display: block;
+	width: 280px;
+	height: 45px;
+	border: 0;
+	outline: 0;
+	top: -2px;
+	padding: 0px 0px 0px 20px;
+	font-weight: 700;
+}
+
+#signin textarea {
+    transition: box-shadow 0.3s ease;
+	position: relative;
+	display: block;
+	width: 280px;
+	height: 100px;
+	border: 0;
+	outline: 0;
+	top: -2px;
+	padding: 20px 0px 0px 20px;
+	font-weight: 700;
+}
+
+#signin  input[type="email"]:hover, #signin  input[type="text"]:hover {
+    box-shadow: 3px 5px 5px rgba(158, 67, 103, 0.8);
+}
+
+#signin textarea:hover {
+    box-shadow: 3px 5px 5px rgba(158, 67, 103, 0.8);
+}
+
+#signin button[type="submit"] {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 140px;
+	display: block;
+	position: absolute;
+	width: 302px;
+	height: 52px;
+	color: rgb(52, 56, 61);
+	border-radius: 10px;
+	font-size: 25px;
+	padding-left: 9px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+#signin button[type="submit"]:hover{
+	color: palevioletred;
+	cursor: pointer;
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(158, 67, 103, 0.8);
+}
+
+.r2 {
+    border: none; 
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 1px; 
+    margin-top: 150px;
+    transform: scale(2); 
+}
+
+.github {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin: 320px 0px 0px 1750px;
+    transform: translateY(0);
+    opacity: 0;
+    transition: opacity 3.5s ease, transform 2.3s ease;
+    transform: translateX(-20px);  
+}
+
+.github.appear {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.vk {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin: 320px 0px 0px 1690px;
+    transform: translateY(0);
+    opacity: 0;
+    transition: opacity 3.5s ease, transform 2.3s ease;
+    transform: translateX(-20px);   
+}
+
+.vk.appear {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
