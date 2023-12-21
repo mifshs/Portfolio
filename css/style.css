@@ -199,6 +199,7 @@ h2, h1 {
 }
 
 .link {
+    display: inline;
     position: relative;
 }
 
