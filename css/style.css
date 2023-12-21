@@ -25,7 +25,7 @@ header {
     transition: 0.2s ease;
     position: fixed;
     height: 120px;
-    width: 100%;
+    width: 99.9%;
     margin: 0 auto;
     border: 0;
 }
@@ -881,7 +881,7 @@ hr {
 	position: absolute;
 	width: 320px;
 	top: 60%;
-    margin: 2900px 0px 0px 750px;
+    margin: 2850px 0px 0px 765px;
     opacity: 0;
     transition: opacity 3.5s ease, transform 2.3s ease;
     transform: translateY(20px);
